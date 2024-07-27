@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Filter</title>
+</head>
+<body>
+    <div>
+        <label for="statusFilter">Status:</label>
+        <select name="statusFilter" id="statusFilter">
+            <option value="all">All</option>
+            <option value="online">Playing</option>
+            <option value="offline">Resting</option>
+        </select>
+    </div>
+    <div>
+        <label for="pointsFilter">Experience:</label>
+        <input type="range" id="pointsFilter" min="0" max="100" step="1">
+        <span id="pointsValue">0</span>
+    </div>
+    <div class="player_box"></div>
+    <script src="./js/renderPlayers.js" type="module"></script>
+</body>
+</html>
